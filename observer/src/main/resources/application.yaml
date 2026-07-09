@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: observer
+
+management:
+  observation:
+    annotations:
+      enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
+  otlp:
+    metrics:
+      export:
+        url: http://localhost:4318/v1/metrics
+  opentelemetry:
+    tracing:
+      export:
+        otlp:
+          endpoint: http://localhost:4318/v1/traces
+    logging:
+      export:
+        otlp:
+          endpoint: http://localhost:4318/v1/logs
+
+logging:
+  level:
+    io.opentelemetry: DEBUG
+    org.springframework.boot.actuate.autoconfigure.observation: DEBUG
