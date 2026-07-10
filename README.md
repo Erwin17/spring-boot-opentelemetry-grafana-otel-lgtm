@@ -40,4 +40,9 @@ La integracion facilita el envio de datos aun colector de **[OpenTelemetry]** me
 
 ![ima_1.png](ima_2.png)
 
-Definimos dos servicio
+* Service-1: Servicio público y se encarga de recibir la solicitud, posterior realizar una solicitud al **[servicio 2]** con el client **[RestClient]**.
+
+* Service-2: Recibe la solicituid del  **[service-1]** y porterior hace una solicutd a un servicio de tercero para consultar a un usuario.
+
+**NOTA:** El servicio **[service-1]** esta expuesto, miestra el **[service-2]** solo es accesible por el [service-1].
+
