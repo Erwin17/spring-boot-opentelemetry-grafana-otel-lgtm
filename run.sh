@@ -9,7 +9,7 @@ fi
 for i in $(seq 1 "$1")
 do
   # El número aleatorio debe concatenarse directamente al final de la URL
-  curl -s -o /dev/null \
+  curl  -o /dev/null \
   -H "Content-Type: application/json" \
   "http://localhost:8081/server-1/user/$(( RANDOM % 5 + 1 ))"
 done
