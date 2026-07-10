@@ -40,9 +40,30 @@ La integracion facilita el envio de datos aun colector de **[OpenTelemetry]** me
 
 ![ima_1.png](ima_2.png)
 
-* Service-1: Servicio público y se encarga de recibir la solicitud, posterior realizar una solicitud al **[servicio 2]** con el client **[RestClient]**.
+* Service-1: Servicio público que se encarga de recibir la solicitud, posterior realiza una solicitud al **[servicio 2]** con el cliente rest **[RestClient]**.
 
-* Service-2: Recibe la solicituid del  **[service-1]** y porterior hace una solicutd a un servicio de tercero para consultar a un usuario.
+* Service-2: Recibe la solicituid del **[service-1]** y porterior hace una solicutd a un servicio de externo para consultar a un usuario.
 
 **NOTA:** El servicio **[service-1]** esta expuesto, miestra el **[service-2]** solo es accesible por el [service-1].
+
+
+### Construir y Levantar el Proyecto
+
+#### Construir las imagenes
+
+```
+bash build.sh
+```
+Contiene todas las instrucciones necesarias para constuir los jar, y levantar el docker compose con todas las imagenes necesarias.
+
+
+### Ejecutar Pruebas.
+
+Ya existe un archivo llamamado **[run.sh]** el cual contiene un script bash para realizar una solicitud rest hacia el api de usuario.
+
+```
+bash run.sh
+```
+
+
 
