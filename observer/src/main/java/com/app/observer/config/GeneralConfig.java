@@ -7,15 +7,10 @@ import org.springframework.web.client.RestClient;
 @Configuration
 public class GeneralConfig {
 
-    /*@Bean
-    public RestClient.Builder restClientBuilder() {
-        return RestClient.builder();
-    }*/
-
     @Bean
     public RestClient restClient(RestClient.Builder restClientBuilder) {
         return restClientBuilder
-                .baseUrl("http://localhost:8081/server-2")
+                .baseUrl("http://observer2:8081/server-2")
             .build();
     }
 

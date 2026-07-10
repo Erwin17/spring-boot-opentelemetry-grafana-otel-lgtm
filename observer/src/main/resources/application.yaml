@@ -15,18 +15,19 @@ management:
   otlp:
     metrics:
       export:
-        url: http://localhost:4318/v1/metrics
+        url: http://grafana-lgtm:4318/v1/metrics
   opentelemetry:
     tracing:
       export:
         otlp:
-          endpoint: http://localhost:4318/v1/traces
+          endpoint: http://grafana-lgtm:4318/v1/traces
     logging:
       export:
         otlp:
-          endpoint: http://localhost:4318/v1/logs
+          endpoint: http://grafana-lgtm:4318/v1/logs
 
 logging:
   level:
     io.opentelemetry: DEBUG
     org.springframework.boot.actuate.autoconfigure.observation: DEBUG
+    org.springframework.boot.context.config: DEBUG
