@@ -34,3 +34,10 @@ La realizar la injección con [RestClient.Builder] Spring de encarga de ajustar 
 ### Configuración de Propiedades.
 
 La integracion facilita el envio de datos aun colector de **[OpenTelemetry]** medinates propidades muy sencillas de configurar, en loa cual podemos elegir el endpoint de exportación y el protocolo **[HTTP o gRPC]**.
+
+
+### Arquitectura del Proyecto
+
+![ima_1.png](ima_1.png)
+
+Definimos dos servicio
