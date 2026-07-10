@@ -38,6 +38,6 @@ La integracion facilita el envio de datos aun colector de **[OpenTelemetry]** me
 
 ### Arquitectura del Proyecto
 
-![ima_1.png](ima_1.png)
+![ima_1.png](ima_2.png)
 
 Definimos dos servicio
