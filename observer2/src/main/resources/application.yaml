@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: observer2
+    name: service-2
 
 management:
   tracing:

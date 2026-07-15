@@ -28,10 +28,12 @@ public class HomeController {
         return this.restClient.get().uri("/users/{id}", id)
         .retrieve()
         .onStatus(HttpStatusCode::is4xxClientError, (request, response) -> {
-            System.out.println("Error en la llamada al serviocio ");
+            System.out.println("Error en la llamada al serviocio: " + response.getStatusCode());
+            throw  new IllegalStateException("Error peticion: 400");
         })
         .onStatus(HttpStatusCode::is5xxServerError, (request, response) -> {
             System.out.println("Error interno en el servicio");
+            throw new IllegalStateException("Error interno en el servidor: "  + response.getStatusCode());
         })
         .body(String.class);
     }

@@ -8,7 +8,7 @@ services:
     networks:
       - opentelemetry-vpc
 
-  observer1:
+  service-1:
     build: 
       context: ./observer
       dockerfile: Dockerfile
@@ -20,7 +20,7 @@ services:
     depends_on:
       - grafana-lgtm
 
-  observer2:
+  service-2:
     build: 
       context: ./observer2
       dockerfile: Dockerfile

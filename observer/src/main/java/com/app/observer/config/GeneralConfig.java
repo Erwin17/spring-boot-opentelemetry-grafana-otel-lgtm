@@ -10,7 +10,7 @@ public class GeneralConfig {
     @Bean
     public RestClient restClient(RestClient.Builder restClientBuilder) {
         return restClientBuilder
-                .baseUrl("http://observer2:8081/server-2")
+                .baseUrl("http://service-2:8081/server-2")
             .build();
     }
 

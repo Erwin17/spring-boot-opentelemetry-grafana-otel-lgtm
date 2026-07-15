@@ -62,8 +62,14 @@ Contiene todas las instrucciones necesarias para constuir los jar, y levantar el
 Ya existe un archivo llamamado **[run.sh]** el cual contiene un script bash para realizar una solicitud rest hacia el api de usuario.
 
 ```
-bash run.sh
+bash run.sh 10
 ```
+Donde 10, es el numero de peticiones que le haras al API de mock definido.
 
+### Visualizar en el tablero 
 
+Utilizamos la imagen de docker **[grafana/otel-lgtm]** que contiene la pila completa de observabilidad para **OpenTelemetry**. Estas incluyen [Loki] para registros, Grafana para la visualziacion, Tempo[trazas] y Prometheus [Metricas].
 
+Tambien cuenta con **[OpenTelemetry Collector]** para la recopilacion y tratamiento de los datos de telemetria. 
+
+![ima_3.png](ima_3.png)
