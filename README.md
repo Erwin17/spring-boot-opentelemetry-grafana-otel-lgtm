@@ -76,5 +76,5 @@ También cuenta con **[OpenTelemetry Collector]** para la recopilación y tratam
 
 En al imagen se puede ver las trazas cuando se al **[service-2]** desde el **[service-1]** y desplegando cada operacion se puede visualziar la llama al serrvicio externo.
 
-NOTA: Tenga en cuenta que tiene la opcion de ver **[Metrics, Logs, Traces]** donde cada una tiene su propositos.
+**NOTA:** Tenga en cuenta que tiene la opcion de ver **[Metrics, Logs, Traces]** donde cada una tiene su propositos.
 
