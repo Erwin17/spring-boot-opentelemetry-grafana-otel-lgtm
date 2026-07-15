@@ -64,12 +64,14 @@ Ya existe un archivo llamamado **[run.sh]** el cual contiene un script bash para
 ```
 bash run.sh 10
 ```
-Donde 10, es el numero de peticiones que le haras al API de mock definido.
+Donde 10, es el numero de peticiones que le haras al API.
 
 ### Visualizar en el tablero 
 
 Utilizamos la imagen de docker **[grafana/otel-lgtm]** que contiene la pila completa de observabilidad para **OpenTelemetry**. Estas incluyen [Loki] para registros, Grafana para la visualziacion, Tempo[trazas] y Prometheus [Metricas].
 
-Tambien cuenta con **[OpenTelemetry Collector]** para la recopilacion y tratamiento de los datos de telemetria. 
+También cuenta con **[OpenTelemetry Collector]** para la recopilación y tratamiento de los datos de telemetría. 
 
 ![ima_3.png](ima_3.png)
+
+En al imagen se peude ver las trazas cuando se al [service-2] desde el [service-1].
